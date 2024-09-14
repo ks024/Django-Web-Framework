@@ -102,3 +102,106 @@
 - **Apps** are modular, reusable components within a project.
 - Understanding the difference and how to structure them is crucial for effective Django development.
 
+## Project Structure
+Use the `startproject` command of Django-admin as follows:
+```bash
+django-admin startproject demoproject 
+```
+
+```arduino
+myproject/
+    manage.py
+    myproject/
+        __init__.py
+        settings.py
+        urls.py
+        wsgi.py
+        asgi.py
+    app1/
+        __init__.py
+        admin.py
+        apps.py
+        models.py
+        views.py
+        urls.py
+        migrations/
+            __init__.py
+        templates/
+            app1/
+                some_template.html
+        static/
+            app1/
+                some_static_file.css
+    app2/
+        __init__.py
+        admin.py
+        apps.py
+        models.py
+        views.py
+        urls.py
+        migrations/
+            __init__.py
+        templates/
+            app2/
+                another_template.html
+        static/
+            app2/
+                another_static_file.js
+```
+
+## Creating a Django App
+
+To create a new app in a Django project, use:
+
+```bash
+python manage.py startapp <name_of_app>
+```
+
+This generates a directory with:
+
+```
+<name_of_app>/
+    __init__.py
+    admin.py
+    apps.py
+    models.py
+    tests.py
+    views.py
+    migrations/
+        __init__.py
+    templates/  # Optional
+    static/     # Optional
+```
+
+### Next Steps
+
+1. Add the app to `INSTALLED_APPS` in `settings.py`:
+
+   ```python
+   INSTALLED_APPS = [
+       '<name_of_app>',
+   ]
+   ```
+
+## Django Management Commands
+
+### `makemigrations`
+Generates migration files for any changes made to your models. Run this command whenever you declare or modify models:
+
+```bash
+python manage.py makemigrations
+```
+
+### `migrate`
+Applies migrations to synchronize the database with the current state of models and migrations:
+
+```bash
+python manage.py migrate
+```
+
+### `runserver`
+Starts Django’s built-in development server on `127.0.0.1:8000`:
+
+```bash
+python manage.py runserver
+```
