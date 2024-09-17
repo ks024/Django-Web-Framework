@@ -93,3 +93,4 @@ django-venv/
 
 # Project specific
 .env
+test_01.py
