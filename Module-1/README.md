@@ -48,6 +48,7 @@
   - Ideal for organizations needing a robust back-end framework.
 
 **Additional Resources.**
+
 - [Django official website](https://www.djangoproject.com/start/overview/)
 - [Django documentation](https://docs.djangoproject.com/en/4.1/)
 - [Installing VS Code on Mac - Official](https://code.visualstudio.com/docs/setup/mac)
@@ -57,6 +58,7 @@
 - [Setting up Virtual environment in Python - venv (Windows and MacOS)](https://docs.python.org/3/library/venv.html)
 
 ## Projects & Apps Overview
+
 ### Django Project and App Structure Overview
 
 - **Website Basics:**
@@ -98,12 +100,15 @@
   - Maintains metadata for each installed app for configuration and introspection.
 
 ### Key Takeaways
+
 - **Projects** are the overarching structure.
 - **Apps** are modular, reusable components within a project.
 - Understanding the difference and how to structure them is crucial for effective Django development.
 
 ## Project Structure
+
 Use the `startproject` command of Django-admin as follows:
+
 ```bash
 django-admin startproject demoproject 
 ```
@@ -186,6 +191,7 @@ This generates a directory with:
 ## Django Management Commands
 
 ### `makemigrations`
+
 Generates migration files for any changes made to your models. Run this command whenever you declare or modify models:
 
 ```bash
@@ -193,6 +199,7 @@ python manage.py makemigrations
 ```
 
 ### `migrate`
+
 Applies migrations to synchronize the database with the current state of models and migrations:
 
 ```bash
@@ -200,12 +207,12 @@ python manage.py migrate
 ```
 
 ### `runserver`
+
 Starts Django’s built-in development server on `127.0.0.1:8000`:
 
 ```bash
 python manage.py runserver
 ```
-
 
 Here's a concise note for your GitHub repo:
 
@@ -245,6 +252,7 @@ Here’s a concise note for your GitHub repo on Django’s MVT pattern and web f
 ---
 
 ## MVT Overview in Django
+
 ### **Django’s MVT Pattern**
 
 Django uses the **Model-View-Template (MVT)** design pattern:
@@ -253,14 +261,13 @@ Django uses the **Model-View-Template (MVT)** design pattern:
 - **View**: Handles user requests and returns responses. Acts as the controller that processes input and generates output, usually by rendering templates.
 - **Template**: Manages the presentation layer. Renders HTML or other formats to present data to the user.
 
-
 Here’s a concise note for your GitHub repo on the MVC architecture:
 
 ---
 
 ## MVC Architecture
-![mvc_architecture](mvc_architecture.png)
 
+![mvc_architecture](mvc_architecture.png)
 
 The **Model-View-Controller (MVC)** architecture is a design pattern commonly used in web frameworks. It divides the application into three interconnected layers:
 
@@ -299,6 +306,7 @@ Here’s a shorter note for your GitHub repo on the MVT architecture in Django:
 ---
 
 ## MVT Architecture in Django
+
 ![mvt_architecture](mvt_architecture.png)
 
 Django uses the **Model-View-Template (MVT)** pattern, a variation of MVC:
@@ -316,6 +324,7 @@ Django uses the **Model-View-Template (MVT)** pattern, a variation of MVC:
 This structure supports a clear separation of concerns and efficient development.
 
 ---
+
 ## Django Application Components
 
 1. **URL Dispatcher**:
@@ -323,6 +332,7 @@ This structure supports a clear separation of concerns and efficient development
    - **Function**: Maps URL patterns to view functions.
    - **File**: Defined in `urls.py`.
    - **Example**:
+
      ```python
      from django.urls import path
      from . import views
@@ -331,6 +341,7 @@ This structure supports a clear separation of concerns and efficient development
          path('', views.index, name='index'),
      ]
      ```
+
    - **Process**: Routes incoming requests to the appropriate view based on URL patterns.
 
 2. **View**:
@@ -338,6 +349,7 @@ This structure supports a clear separation of concerns and efficient development
    - **Function**: Interacts with models to perform CRUD operations and returns responses.
    - **File**: Defined in `views.py`.
    - **Example**:
+
      ```python
      from django.http import HttpResponse
 
@@ -364,8 +376,10 @@ This structure supports a clear separation of concerns and efficient development
 
 This structure supports efficient handling of the request-response cycle in Django web applications.
 
---- 
+---
+
 ## Additional resources
+
 The links below are helpful as additional references when creating Django apps, expanding upon the differences between the MVC and MVT Frameworks, and following best practices when structuring your Django projects.
 
 - [Writing your first Django app – official documentation](https://docs.djangoproject.com/en/4.1/)
