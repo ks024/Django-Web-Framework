@@ -1122,3 +1122,16 @@ Class-based views in Django offer a robust way to manage application logic, simp
 - Configure URLs and handle parameters for different HTTP methods.
 - Implement error handling at various levels.
 - Utilize class-based views for structured and reusable code.
+
+### Additional resources
+
+Here is a list of additional resources that may be helpful as you continue your learning journey.
+
+- [The django.urls functions for use in URLconfs - official documentation](https://docs.djangoproject.com/en/4.1/ref/urls/)
+- [URL dispatcher](https://docs.djangoproject.com/en/4.1/topics/http/urls/#url-dispatcher)
+- [URLs - Official](https://docs.djangoproject.com/en/4.1/topics/http/urls/#how-django-processes-a-request)
+- [Regular Expressions](https://docs.djangoproject.com/en/4.1/topics/http/urls/#using-regular-expressions)
+- [Django URL mapping](https://docs.djangoproject.com/en/4.1/topics/http/views/#mapping-urls-to-views)
+- [Get URL parameters in Django](https://docs.djangoproject.com/en/4.1/topics/http/urls/#how-django-processes-a-request)
+- [Render HTML Forms – GET and POST in Django](https://docs.djangoproject.com/en/4.1/topics/forms/)
+- [HTTP Request Response object](https://docs.djangoproject.com/en/4.1/ref/request-response/)
