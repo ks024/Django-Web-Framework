@@ -96,3 +96,6 @@
   SELECT * FROM users;
   .output stdout
   ```
+
+**Additional Resources:**
+- [sqlitetutorial.net](https://www.sqlitetutorial.net/sqlite-commands/)
