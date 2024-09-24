@@ -51,7 +51,7 @@ Django forms facilitate the collection of user data through various HTML input e
 
 - A form that collects customer information such as name and age.
 
-### Django Form Class
+### Form Class
 
 - The Django Form class is used to define the expected attributes for form creation and processing, making it easier to manage forms.
 
@@ -79,12 +79,6 @@ Choosing appropriate field types based on data requirements (e.g., feedback form
 - Change input widgets (e.g., `forms.Textarea` for multiline text).
 - Adjust sizes and validation behaviors (e.g., `number input` for dates).
 - Utilize `ChoiceField` for dropdowns, with `RadioSelect` for radio button displays.
-
-## Conclusion
-
-This section has covered the use of Django form fields, ensuring correct data types and effective form building. For more options and advanced features, refer to the Django documentation.
-
----
 
 ## Django Fields Overview
 
@@ -147,7 +141,7 @@ tax_code = models.CharField(max_length=20, unique=True)
 SEMESTER_CHOICES = (("1", "Civil"), ("2", "Electrical"), ...)
 ```
 
-### Field Types
+### Django Field Types
 
 - **CharField**: For string data with a defined maximum length.
 - **IntegerField**: For storing integers; variants include `BigIntegerField`, `SmallIntegerField`, and `AutoField`.
@@ -324,12 +318,6 @@ def index(request):
 5. **Run Server**: Use `python manage.py runserver` to view the form in a web browser.
 6. **Enhance Form**: Add validation, help text, and custom widgets as needed.
 
-## Conclusion
-
-This guide provided an overview of creating a basic form in Django, emphasizing built-in validation, rendering features, and CSRF protection, which enhances security in web applications.
-
----
-
 ## Using ModelForm in Django
 
 ### Steps to Create a ModelForm
@@ -417,5 +405,3 @@ Using Django's `ModelForm`, you can create forms linked directly to models, simp
 - [Django Models Documentation](https://docs.djangoproject.com/en/4.1/topics/db/models/)
 - [Django Migrations Documentation](https://docs.djangoproject.com/en/4.1/topics/migrations/)
 - [Using Models - Mozilla](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Models)
-
----
