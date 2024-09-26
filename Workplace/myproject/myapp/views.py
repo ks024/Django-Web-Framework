@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from myapp.forms import InputForm
+from myapp.forms import InputForm, LogForm
 
 # Create your views here.
 def drinks(request, drink_name):
@@ -24,4 +24,13 @@ def form_view(request):
     form = InputForm()
     context = {"form": form}
     return render(request, "home.html", context)
+
+def model_form_view(request):
+    form = LogForm()
+    if request.method == 'POST':
+        form = LogForm(request.POST)
+        if form.is_valid():
+            form.save()
+    context = {"form": form}
+    return render(request, "model.html", context)
 
