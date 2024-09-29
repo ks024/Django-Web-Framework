@@ -24,4 +24,4 @@ urlpatterns = [
     path('home/', views.home)
 ]
 
-handler404 = 'myproject.views.handler404'
+# handler404 = 'myproject.views.handler404'
