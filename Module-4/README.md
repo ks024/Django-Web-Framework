@@ -16,5 +16,5 @@ By the end of this tutorial, you will be able to:
 This tutorial includes the following topics:
 
 - [**Templates**](templates.md): Introduction to Django templates and their structure.
-- [**Working with Templates**](): Best practices for creating and managing templates.
+- [**Working with Templates**](working%20with%20templates.md): Best practices for creating and managing templates.
 - [**Debugging and Testing**](): Techniques to troubleshoot and test your templates for optimal performance.
