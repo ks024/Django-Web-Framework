@@ -1,5 +1,20 @@
 # Django Forms and Models Overview
 
+## Table of Contents
+
+1. [Introduction to Forms](#introduction-to-forms)
+2. [Django Form Class](#django-form-class)
+3. [Integration with Models](#integration-with-models)
+4. [Working with Django Form Fields](#working-with-django-form-fields)
+5. [Django Fields Overview](#django-fields-overview)
+6. [Django Form API Overview](#django-form-api-overview)
+7. [Creating Forms in Django](#creating-forms-in-django)
+8. [Using ModelForm in Django](#using-modelform-in-django)
+9. [Conclusion](#conclusion)
+10. [Additional Resources](#additional-resources)
+
+---
+
 ## Introduction to Forms
 
 - **Purpose**: Forms are integral to web applications, allowing users to input data (e.g., login credentials, registration information, orders) through HTML form tags.
@@ -244,7 +259,7 @@ class ApplicationForm(forms.Form):
 ### Common Django Form Fields
 
 - **CharField**: For text input. Use `forms.Textarea` for multiline text.
-- **IntegerField**: Accepts only integers; can specify minimum and maximum values.
+- **IntegerField**: Accepts only integers; can specify minimum and maximum values
 - **FloatField**: Validates floating-point numbers; `DecimalField` is for fixed decimal places.
 - **FileField**: For file uploads.
 - **ImageField**: Validates that uploaded files are images.
@@ -259,9 +274,7 @@ class ApplicationForm(forms.Form):
 
 ```python
 >>> from myapp import forms 
->>> f =
-
- forms.ApplicationForm() 
+>>> f = forms.ApplicationForm() 
 >>> print(f.as_p())  # Renders the form in paragraph format
 ```
 
