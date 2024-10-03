@@ -1,5 +1,35 @@
 # Django Models and Migrations Guide
 
+## Table of Contents
+
+1. [Learning Objectives](#learning-objectives)
+2. [Key Concepts](#key-concepts)
+   - [Models](#models)
+   - [Migrations](#migrations)
+3. [CRUD Operations](#crud-operations)
+   - [Create](#create)
+   - [Read](#read)
+   - [Update](#update)
+   - [Delete](#delete)
+4. [Django Model Relationships](#django-model-relationships)
+   - [One-to-One Relationship](#1-one-to-one-relationship)
+   - [One-to-Many Relationship](#2-one-to-many-relationship)
+   - [Many-to-Many Relationship](#3-many-to-many-relationship)
+5. [Creating Models](#creating-models)
+   - [Steps to Create a Model](#steps-to-create-a-model)
+6. [Understanding Migrations](#understanding-migrations)
+   - [Migration Commands](#migration-commands)
+   - [Example Workflow](#example-workflow)
+7. [Applying Migrations](#applying-migrations)
+   - [Steps to Apply Migrations](#steps-to-apply-migrations)
+8. [Object-Relational Mapping (ORM) in Django](#object-relational-mapping-orm-in-django)
+   - [Overview](#overview)
+   - [Key Features](#key-features)
+9. [Conclusion](#conclusion)
+10. [Additional Resources](#additional-resources)
+
+---
+
 ## Learning Objectives
 
 - **Create Django models**: Understand how to define models and their relationships.
