@@ -228,3 +228,12 @@ You can check permissions directly in templates:
 ## 8. Conclusion
 
 Django's admin interface, along with its robust user and permission management systems, provides a streamlined way to manage data and control access in your applications. By following the steps outlined above, you can effectively configure the admin interface, customize user management, and enforce permissions across your Django project. This ensures a secure and efficient application environment tailored to your needs.
+
+**Additional resources**
+The following resources will be helpful as additional references in dealing with different concepts related to Django admin, Django-admin and manage.py commands and permissions.
+
+- [django-admin and manage.py – official documentation](https://docs.djangoproject.com/en/4.1/ref/django-admin/)
+- [Using the Django authentication system](https://docs.djangoproject.com/en/4.1/topics/auth/default/)
+- [Django Admin site – MDN web docs](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Admin_site)
+- [Django Admin-site – Comprehensive](https://docs.djangoproject.com/en/4.1/ref/contrib/admin/)
+- [Django permissions – TestDriven](https://docs.djangoproject.com/en/4.1/topics/auth/customizing/)
