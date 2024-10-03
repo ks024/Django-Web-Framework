@@ -1,6 +1,12 @@
 from django.http import HttpResponse
+from django.views import View
 from django.shortcuts import render
+from django.views.generic.base import TemplateView
+from django.views.generic.edit import CreateView
+from django.views.generic.list import ListView
+from django.views.generic.detail import DetailView
 from myapp.forms import InputForm, LogForm
+from myapp.models import Employee
 
 # Create your views here.
 def drinks(request, drink_name):
@@ -33,4 +39,47 @@ def model_form_view(request):
             form.save()
     context = {"form": form}
     return render(request, "model.html", context)
+
+
+# Class Generic views
+
+class NewView(View):   
+    def get(self, request):   
+        # View logic will place here   
+        return HttpResponse('response') 
+    
+class IndexView(TemplateView): 
+    template_name = 'new_file.html' 
+
+class EmployeeCreate(CreateView):
+    model = Employee
+    fields = '__all__'
+    success_url = "/demo/create/"
+    template_name = 'myapp/employeeCreate.html'
+
+
+class EmployeeList(ListView):
+    model = Employee
+    success_url = "/employees/success/"
+    template_name = 'myapp/employee_list.html'
+
+class EmployeeDetail(DetailView):
+    model = Employee
+    template_name = 'myapp/employee_detail.html'
+
+from django.views.generic.edit import UpdateView  
+class EmployeeUpdate(UpdateView):   
+    model = Employee   
+    fields = '__all__'   
+    success_url = "/employees/success/" 
+    template_name = 'myapp/employee_update_form.html'
+
+from django.views.generic.edit import DeleteView 
+class EmployeeDelete(DeleteView):   
+    model = Employee   
+    success_url = "/employees/success/"
+    template_name = 'myapp/employee_confirm_delete.html'
+
+
+    
 
