@@ -1,5 +1,34 @@
 # Configuring MySQL Database in a Django Project
 
+## Table of Contents
+
+1. [Introduction to Django's Default Database](#1-introduction-to-djangos-default-database)
+2. [When to Use a More Robust Database](#2-when-to-use-a-more-robust-database)
+3. [Setting Up MySQL Database in Django](#3-setting-up-mysql-database-in-django)
+   - [3.1 Prerequisites](#31-prerequisites)
+   - [3.2 Configuring the Database Connection](#32-configuring-the-database-connection)
+   - [3.3 Using an Options File](#33-using-an-options-file)
+4. [Creating the Database](#4-creating-the-database)
+   - [Example of Creating a Database Using MySQL Command Line](#example-of-creating-a-database-using-mysql-command-line)
+   - [Permissions](#permissions)
+5. [Security Considerations](#5-security-considerations)
+6. [Installing MySQL](#6-installing-mysql)
+   - [Step 1: Download MySQL Server](#step-1-download-mysql-server)
+   - [Step 2: Start MySQL Command Line Client](#step-2-start-mysql-command-line-client)
+   - [Step 3: Create a Database](#step-3-create-a-database)
+7. [Installing MySQL DB API Driver](#7-installing-mysql-db-api-driver)
+8. [Enabling MySQL in Django](#8-enabling-mysql-in-django)
+   - [Step 1: Update `settings.py`](#step-1-update-settingspy)
+   - [Step 2: Run Migrations](#step-2-run-migrations)
+   - [Step 3: Verify Tables](#step-3-verify-tables)
+9. [Using MySQL with VS Code](#9-using-mysql-with-vs-code)
+10. [Conclusion](#conclusion)
+11. [Key Points Recap](#key-points-recap)
+12. [Skills Gained](#skills-gained)
+13. [Additional Resources](#additional-resources)
+
+---
+
 ## 1. Introduction to Django's Default Database
 
 When you create a new Django project, the default database configuration uses SQLite. This is defined in the `settings.py` file and allows for immediate database functionality without additional setup. SQLite is user-friendly and does not require a separate server process, making it ideal for small projects or rapid prototyping.
@@ -230,13 +259,15 @@ In this guide, you learned how to configure a MySQL database connection in a Dja
 
 - Created and managed models in Django effectively.
 - Interacted with the database using the QuerySet API.
-- Built and utilized forms with the form API.
+- Built and utilized
+
+ forms with the form API.
+
 - Managed users and permissions through the Django admin interface.
 - Configured MySQL for use in Django projects.
 
----
+## Additional Resources
 
-**Additional Resources**
 The following resources will be helpful as additional references in dealing with different concepts related to the topics you have covered in Database Configuration.
 
 - [Databases – Django Official Documentation](https://docs.djangoproject.com/en/4.1/ref/databases/)
