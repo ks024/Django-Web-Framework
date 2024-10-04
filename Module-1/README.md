@@ -200,6 +200,8 @@ python manage.py runserver
 
 ### Django’s MVT Pattern
 
+![mvt-architecture](mvt_architecture.png)
+
 - **Model**: Manages data and interacts with the database.
 - **View**: Handles processing logic and user requests.
 - **Template**: Renders the presentation layer.
@@ -211,6 +213,8 @@ python manage.py runserver
 3. Template formats and renders data into HTML for the client.
 
 ## MVC Architecture
+
+![mvc-architecture](mvc_architecture.png)
 
 ### Components of MVC
 
