@@ -134,7 +134,7 @@ python manage.py startapp <name_of_app>
 
 ### App Structure
 
-```
+```python
 <name_of_app>/
     __init__.py
     admin.py
@@ -230,7 +230,7 @@ python manage.py runserver
 3. **Model**: Defines data structure and manages database interactions (defined in `models.py`).
 4. **Template**: Manages the presentation layer (located in the `templates` folder).
 
-### Workflow
+### Workflow_overall
 
 1. URL Dispatcher matches URL patterns to view functions.
 2. View processes requests, interacts with models, and prepares the response.
