@@ -1,6 +1,7 @@
 # Django Web Framework Course Summary
 
 ## Table of Contents
+
 1. [Introduction](#introduction)
 2. [Course Structure](#course-structure)
 3. [Overview of Django Framework](#overview-of-django-framework)
@@ -25,10 +26,12 @@
 ---
 
 ## Introduction
+
 - Django is an open-source Python framework for building large-scale web applications.
 - Requires knowledge of databases, Python, HTML, and CSS.
 
 ## Course Structure
+
 - **Module 1:** Introduction to Django, including projects and apps, and the MVT pattern.
 - **Module 2:** Exploring views, handling HTTP requests/responses, URL patterns, and class-based views.
 - **Module 3:** Working with models, using Django admin, QuerySet API, forms, and MySQL database.
@@ -36,6 +39,7 @@
 - **Module 5:** Course recap and final project to create a data-driven web application for Little Lemon Restaurant.
 
 ### Learning Approach
+
 - Watch and re-watch videos, engage with course readings, and complete exercises.
 - Participate in quizzes and discussions to reinforce learning.
 - Regular study schedule recommended for best results.
@@ -43,16 +47,19 @@
 ## Overview of Django Framework
 
 ### What is Django?
+
 - Open-source web development framework written in Python.
 - Initially created for a newspaper publisher's web application.
 - Ideal for high-text-content, media-rich, and high-traffic projects.
 
 ### Benefits of Using Django
+
 - Provides essential components (templates, libraries, APIs) to avoid reinventing common features.
 - Ensures robust, secure, adaptable, and scalable functionalities.
 - Supports integration with various tools and other Python libraries.
 
 ### Real-World Applications
+
 - **Publishing:** Handles large volumes of text and media.
 - **eCommerce, Healthcare, Finance:** Reliable for handling complex and secure transactions.
 - **Social Media & Networking:** Used by major platforms like Instagram for scalability.
@@ -61,12 +68,14 @@
 - **OTT Media Platforms:** Powers streaming services with high demand for scalability.
 
 ### Key Features
+
 - **Scalability:** Easily adapts to growing user bases and resource demands.
 - **Fault Tolerance:** Reliable for large projects with high traffic.
 - **Cost-Effective:** Open-source nature reduces costs.
 - **Community & Documentation:** Strong support and comprehensive resources available.
 
 ### Overall Advantages
+
 - Avoids redundant development.
 - Facilitates integration with various front-end frameworks.
 - Ideal for organizations needing a robust back-end framework.
@@ -74,16 +83,19 @@
 ## Projects & Apps Overview
 
 ### Django Project and App Structure Overview
+
 - **Website Basics:** Static websites use HTML, CSS, and JavaScript with simple folder structures.
 - **Dynamic Web Applications:** Require complex functionality (state management, data storage) and streamline development with Django.
 
 ### Core Concepts
+
 - **HTTP:** Essential for web communication; every action is tied to HTTP requests and URLs.
 - **Web Server:** Handles requests and responses; Django includes a development server.
 - **Database:** Stores and retrieves data; necessary for dynamic websites.
 - **Apps in Django:** Include models, views, templates, URLs, and more.
 
 ### App Design
+
 - Apps should be feature-targeted and focused on a single purpose.
 - A Django project can contain multiple apps, each responsible for a specific feature.
 
@@ -136,6 +148,7 @@ python manage.py startapp <name_of_app>
 ```
 
 ### Next Steps
+
 1. Add the app to `INSTALLED_APPS` in `settings.py`:
 
    ```python
@@ -147,6 +160,7 @@ python manage.py startapp <name_of_app>
 ## Django Management Commands
 
 ### `makemigrations`
+
 Generates migration files for changes made to your models:
 
 ```bash
@@ -154,6 +168,7 @@ python manage.py makemigrations
 ```
 
 ### `migrate`
+
 Applies migrations to synchronize the database with the current state of models and migrations:
 
 ```bash
@@ -161,6 +176,7 @@ python manage.py migrate
 ```
 
 ### `runserver`
+
 Starts Django’s built-in development server:
 
 ```bash
@@ -170,10 +186,12 @@ python manage.py runserver
 ## Understanding Web Frameworks and Django
 
 ### Overview
+
 - Frameworks provide a structured foundation to build web applications efficiently.
 - Django is a high-level Python framework designed for rapid development and clean design.
 
 ### Key Takeaways
+
 - **Frameworks**: Offer a solid foundation for building applications.
 - **Django**: Popular for its speed, feature set, security, and scalability.
 - **Three-Tier Architecture**: Splits applications into presentation, application, and data tiers for better organization.
@@ -181,11 +199,13 @@ python manage.py runserver
 ## MVT Overview in Django
 
 ### Django’s MVT Pattern
+
 - **Model**: Manages data and interacts with the database.
 - **View**: Handles processing logic and user requests.
 - **Template**: Renders the presentation layer.
 
 ### Workflow
+
 1. View processes requests and interacts with the Model.
 2. Model manages data.
 3. Template formats and renders data into HTML for the client.
@@ -193,11 +213,13 @@ python manage.py runserver
 ## MVC Architecture
 
 ### Components of MVC
+
 1. **Model**: Manages data and interacts with the backend database.
 2. **View**: Handles the presentation layer of the application.
 3. **Controller**: Intercepts user requests and coordinates between the View and Model.
 
 ### Key Benefits
+
 - **Separation of Concerns**: Divides the application into distinct responsibilities.
 - **Modularity**: Allows independent development and testing of each component.
 
@@ -209,12 +231,14 @@ python manage.py runserver
 4. **Template**: Manages the presentation layer (located in the `templates` folder).
 
 ### Workflow
+
 1. URL Dispatcher matches URL patterns to view functions.
 2. View processes requests, interacts with models, and prepares the response.
 3. Model manages data and database operations.
 4. Template renders dynamic HTML based on the context provided by the view.
 
 ## Additional Resources
+
 - [Django Official Website](https://www.djangoproject.com/start/overview/)
 - [Django Documentation](https://docs.djangoproject.com/en/4.1/)
 - [Writing Your First Django App – Official Documentation](https://docs.djangoproject.com/en/4.1/)
