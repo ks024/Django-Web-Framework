@@ -218,11 +218,11 @@ Add the following view logic inside the `menu()` view function:
 
 Open the app-level **urls.py** file and add the URL path for the menu view function using the **path()** function.
 
-**Step 12: **
+**Step 12:**
 
 Expand the app-level directory **templates** in the explorer panel and observe the different HTML files created for building the web page.
 
-**Step 13: **
+**Step 13:**
 
 Create a file called **menu.html** and add the following starter code inside it:
 
